@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <h1 class="text-center p-4">CRUD Operation</h1>
+    <div class="m-auto w-75 p-5 bg-primary-subtle rounded-1">
+        <label>Product Name</label>
+        <input type="text" class="form-control" id="ProductName">
+        <div id="PNameAlert" class="text-danger d-none ">Should start with Capital letter</div>
+        <label>Product Price</label>
+        <input type="text" class="form-control" id="ProductPrice">
+        <div id="PNameAlert" class="text-danger d-none ">Should be a number</div>
+
+        <label>Product Category</label>
+        <input type="text" class="form-control" id="Productcategory">
+        <div id="PNameAlert" class="text-danger d-none ">Should be letters only</div>
+        <label>Product Description</label>
+        <textarea name="" class="form-control" id="ProductDesc"></textarea>
+        <div id="PNameAlert" class="text-danger d-none ">Should be letters only</div>
+        <button class="btn btn-primary float-end my-3 " id="Addbtn" disabled>Add Product</button>
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="m-auto">
+        <input type="text" placeholder="Search by Name..." id="Searchbtn" class="form-control my-4 w-75 m-auto">
+    </div>
+    <table class="table m-auto w-75 text-center mt-5 ">
+        <thead>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Category</th>
+            <th>Description</th>
+            <th></th>
+            <th></th>
+        </thead>
+        <tbody id="tableBody">
+
+        </tbody>
+    </table>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/CRUDop.js"></script>
+</body>
+
+</html>
