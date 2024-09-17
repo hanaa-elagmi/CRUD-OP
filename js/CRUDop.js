@@ -113,7 +113,7 @@ function UpdateProduct() {
     Products[currentIndex] = product;
     localStorage.setItem('ProductsArray', JSON.stringify(Products));
     AddProductbtn.innerHTML = 'Add Product';
-
+    window.location.reload();
 }
 
 //validation
